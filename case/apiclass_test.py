@@ -172,6 +172,6 @@ if __name__ == "__main__":
     print("main")
     test = apiClassTestCase()
     result = test.runAllCase("小滴课堂")
-12323
+1232322
     print("v1")
 

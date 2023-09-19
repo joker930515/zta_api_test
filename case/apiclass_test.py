@@ -172,4 +172,5 @@ if __name__ == "__main__":
     print("main")
     test = apiClassTestCase()
     result = test.runAllCase("小滴课堂")
+    print(result)
 

@@ -8,6 +8,15 @@ from util.send_mail import SendMail
 
 
 class apiClassTestCase:
+
+    def testest(self, app):
+        print("loadAllCaseByApp")
+        my_db = MysqlDB()
+        sql = "select * from `case` where app='{0}'".format(app)
+        result = my_db.query(sql, state="all")
+        return result
+
+
     def loadAllCaseByApp(self, app):
         print("loadAllCaseByApp")
         my_db = MysqlDB()

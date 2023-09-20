@@ -14,7 +14,7 @@ class apiClassTestCase:
         my_db = MysqlDB()
         sql = "select * from `case` where app='{0}'".format(app)
         result = my_db.query(sql, state="all")
-        print("this is v2")
+        print("this is master")
         return result
 
 

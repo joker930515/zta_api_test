@@ -8,6 +8,16 @@ from util.send_mail import SendMail
 
 
 class apiClassTestCase:
+
+    def testest(self, app):
+        print("loadAllCaseByApp")
+        my_db = MysqlDB()
+        sql = "select * from `case` where app='{0}'".format(app)
+        result = my_db.query(sql, state="all")
+        print("this is v2")
+        return result
+
+
     def loadAllCaseByApp(self, app):
         print("loadAllCaseByApp")
         my_db = MysqlDB()
@@ -172,6 +182,11 @@ if __name__ == "__main__":
     print("main")
     test = apiClassTestCase()
     result = test.runAllCase("小滴课堂")
+<<<<<<< HEAD
 1232322
     print("v1")
+=======
+    print(result)
+    print("v2")
+>>>>>>> v2
 
